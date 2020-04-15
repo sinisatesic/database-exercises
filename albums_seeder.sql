@@ -1,4 +1,5 @@
 USE codeup_test_db;
+TRUNCATE albums;
 # INSERT INTO quotes (author_first_name, author_last_name, content)
 # VALUES  ('Douglas', 'Adams', 'Don''t panic'),
 #         ('Douglas', 'Adams', 'Time is an illusion. Lunchtime doubly so.'),
