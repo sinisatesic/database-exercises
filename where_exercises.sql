@@ -16,6 +16,7 @@ WHERE first_name IN ('Irena', 'Vidya', 'Maya');
 SELECT first_name, last_name
 FROM employees
 WHERE LEFT(last_name, 1) IN ('E');
+#can also do WHERE last_name LIKE ('E');
 
 SELECT first_name, last_name
 FROM employees
