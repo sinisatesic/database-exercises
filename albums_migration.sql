@@ -1,4 +1,4 @@
-warnings
+
 USE codeup_test_db;
 
 DROP TABLE IF EXISTS albums;
@@ -12,3 +12,6 @@ CREATE TABLE albums (
     genre VARCHAR(500) NOT NULL,
     PRIMARY KEY (id)
 );
+ALTER TABLE albums
+
+ADD UNIQUE (name, artist);

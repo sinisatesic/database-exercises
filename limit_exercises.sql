@@ -49,3 +49,17 @@ WHERE hire_date LIKE '199%' AND birth_date LIKE '%-12-25' ORDER BY hire_date DES
 SELECT first_name, last_name
 FROM employees
 WHERE hire_date LIKE '199%' AND birth_date LIKE '%-12-25' ORDER BY hire_date DESC limit 5 OFFSET  55;
+
+
+
+
+
+
+####
+SELECT concat(e.first_name, ' ', e.last_name) AS full_name, d.dept_name
+FROM employees as e
+JOIN dept_emp as de
+ON de.emp_no = e.emp_no
+JOIN departments as d
+    on de.dept_no = d.dept_no
+WHERE e.emp_no = 10001;
